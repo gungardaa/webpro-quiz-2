@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EduTask – Dashboard Akademik</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #4c7df0, #6cc6f0);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      padding: 40px 50px;
+      border-radius: 20px;
+      text-align: center;
+      width: 90%;
+      max-width: 450px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    a.btn {
+      text-decoration: none;
+      background: #ffffff;
+      color: #3a6af0;
+      font-weight: 600;
+      padding: 14px 18px;
+      border-radius: 12px;
+      transition: 0.25s;
+      display: block;
+    }
+
+    a.btn:hover {
+      background: #e3ecff;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Selamat Datang di <br> <strong>EduTask</strong></h1>
+    <p>Kelola mata kuliah, tugas, dan statistik akademik Anda.</p>
+
+    <div class="btn-group">
+      <a href="users/login.jsp" class="btn">Login</a>
+      <a href="users/register.jsp" class="btn">Register</a>
+    </div>
+  </div>
+</body>
+</html>
